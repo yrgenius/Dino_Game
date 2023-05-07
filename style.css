@@ -19,7 +19,7 @@ body {
 .score {
     position: absolute;
     text-align: end;
-    width: 50px;
+    width: 70px;
     font-size: 23px;
     text-shadow: 1px 1px 3px black;
 }

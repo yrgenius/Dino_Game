@@ -20,6 +20,7 @@ function start() {
 
         if (cactusLeft < 50 && cactusLeft > 0 && dinoTop >= 140) {
             stopAnimation();
+            clearInterval(isAlive);
         }
 
         //TODO: разобраться с подсчетом очков 
@@ -29,8 +30,6 @@ function start() {
         }
     }, 10);
 }
-
-
 
 function jump() {
     if (event.code === 'Space') {
@@ -55,7 +54,6 @@ function stopAnimation() {
     isStart = !isStart;
     score = 0;
     scoreOut.textContent = score;
-    clearInterval(isAlive);
 }
 
 
